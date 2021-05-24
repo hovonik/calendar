@@ -1,0 +1,10 @@
+<app-calendar-header></app-calendar-header>
+<div class="page">
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+    <ng-container *ngFor="let day of getDays(); let index = index">
+      <mat-button-toggle [ngClass]="{'sun-or-sat': index % 7 == 6 || index % 7 == 0}" value="{{day}}"><span
+        [ngClass]="{'current': day == this.calendar.currentDay && this.calendar.currentMonth == this.calendar.checkedMonth && this.calendar.currentYear == this.calendar.checkedYear}">{{day}}</span>
+      </mat-button-toggle>
+    </ng-container>
+  </mat-button-toggle-group>
+</div>

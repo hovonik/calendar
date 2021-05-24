@@ -1,0 +1,7 @@
+<div class="black-bg">
+  <div class="buttons-section"><button mat-button (click)="changeMonth(selectedMonth - 1)"><</button>
+    {{getDate() | date: 'MMM, y'}}
+    <button mat-button (click)="changeMonth(selectedMonth + 1)">></button>
+  </div>
+  <div class="week-days"><span>Sun</span><span>Mon</span><span>Tue</span><span>Web</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+</div>

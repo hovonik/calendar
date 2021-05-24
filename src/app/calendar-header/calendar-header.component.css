@@ -1,0 +1,12 @@
+.black-bg{
+  background-color: black;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  width: 436px;
+  align-items: center;
+}
+.week-days span {
+  padding: 5px 19px;
+  color: #FFF
+}
